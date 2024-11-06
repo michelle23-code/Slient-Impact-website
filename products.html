@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products - Slient Impact Digital</title>
+   <link rel="stylesheet" href="css\styles.css">
+    <script src="js\script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SILENT Impact</h1>
+      <nav>
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="Contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Our Products</h2> 
+            <div class="product" onclick="addToCart('The Roadmap Exclusive',439)">
+                <h3>The Roadmap Exclusive</h3>
+                <p>Price: $439</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h3>YOUR Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="total-price">total: $0</p>
+        </section>
+    </main>
+    <footer>
+    <div>2024 Slient impact.All rights reserved</div>
+</footer>   
+</body>
+</html>
