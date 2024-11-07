@@ -1,3 +1,222 @@
 body{
-    background-color: aqua;
+    background-color: #fef9f9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4a4a4a;
+}
+header {
+    background-color: #d47fa6;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+
+}
+header h1{
+    font-size: 2,2rem;
+    margin-bottom: 0.5rem;
+}
+nav{
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #fce4ec;
+    padding: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: colour 0.3s;
+}
+nav a:hover,nav a.active{
+    color: #ffffff;
+
+}
+main{
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+.hero{
+    background: linear-gradient(135deg,#f9c5d1,#f5a6b9);
+    color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero 
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.hero p{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.button{
+    background-color:#e89bb8;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.button:hover{
+    background-color: #d47fab;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.products{
+    background-color: #fff;
+    padding: 1.5rem;
+    flex: 1 1 calc(50%-2rem);
+    margin-bottom: 2rem;
+    box-shadow: o 4px 8px rgba(0,0,0,0.1);
+
+}
+.product {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.product:hover{
+    transform: scale(1.02);
+}
+.product h3{
+    font-size: 1.5rem;
+    color: #d47fab;
+    margin-bottom: 0.5rem;
+}
+
+.product p{
+    margin-bottom: 1rem;
+}
+.add-to-cart{
+    background-color: #d47fa6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.add-to-cart:hover{
+    background-color: #b5698c;
+}
+#cart{
+    background-color: #fdecef;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0 , 0,0.1 );
+}
+
+#cart h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d47fab;
+}
+
+#contact-form{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0 , 0,0.1 );
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+#contact-form label{
+    display:block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #d47fa6;
+}
+
+#contact-form textarea:focus{
+    border-color: #f5a6b9;
+    
+}
+
+#contact-fotm button {
+    background-color: #d47fab;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3 ease;
+}
+
+#contact-form:hover{
+    background-color: #b5698c;
+}
+
+#form-feed{
+    margin-top: 1rem;
+    font-family: bold;
+    color: #ff4d4d;
+}
+
+footer{
+    background-color: #d47fa6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.product{
+    animation: fadeInup 0.6s ease-in-out;
+}
+
+@keyframes fadeInup {
+    from{
+        opacity: 0;
+        transform: translate(20px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size: 1.8rem;
+    }
+}
+
+nav{
+    font-size: 1.8rem;
+}
+
+.hero h2{
+    font-size: 2rem;
+}
+
+.products{
+    flex-direction: column;
+}
+
+.product,#contact-form{
+    padding: 1rem;
+}
+
+#contact-form input,#contact-form textarea {
+    padding: 0.5rem;
+
 }
